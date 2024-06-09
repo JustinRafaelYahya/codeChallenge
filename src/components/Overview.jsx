@@ -21,9 +21,7 @@ const Overview = () => {
         more. From our Costumer Services up to our PC Tecnicians, we
         passionately help you to discover the ultimate experience of your PC.{" "}
       </p>
-      <h2 className="flex justify-center text-3xl font-bold mb-8">
-        What are we offering
-      </h2>
+      <h2 className="flex justify-center text-3xl font-bold mb-8">Our Perks</h2>
       <div className=" grid lg:grid-cols-4 gap-8">
         <div className="flex flex-col p-4 my-4">
           <FaRegStar className="mx-auto mb-6" size={100} />

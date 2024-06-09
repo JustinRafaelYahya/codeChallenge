@@ -1,12 +1,10 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
+import Home from "./pages/Home";
+import Store from "./pages/Store";
+import About from "./pages/About";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Overview from "./components/Overview";
-import Products from "./components/Products";
-import Testimonials from "./components/Testimonials";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,10 +12,13 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <Overview />
-      <Products />
-      <Testimonials />
+      <Router>
+        <Routes>
+          <Route path="/store" element={<Store />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
     </>
   );
 }
