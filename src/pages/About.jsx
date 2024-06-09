@@ -1,5 +1,6 @@
 import History from "../components/Company History";
 import TeamsOverview from "../components/TeamsOverview";
+import Culture from "../components/Culture";
 import React from "react";
 
 const About = () => {
@@ -7,6 +8,7 @@ const About = () => {
     <div>
       <History />
       <TeamsOverview />
+      <Culture />
     </div>
   );
 };
